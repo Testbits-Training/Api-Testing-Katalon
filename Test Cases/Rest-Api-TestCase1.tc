@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>sample test case</description>
+   <name>Rest-Api-TestCase1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ec69a37-07a5-44b3-8402-1767b4d337fe</testCaseGuid>
+</TestCaseEntity>

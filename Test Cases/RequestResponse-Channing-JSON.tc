@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>sample channing request api testing</description>
+   <name>RequestResponse-Channing-JSON</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d594fc7e-b2fe-4184-9398-3bba26d109ab</testCaseGuid>
+</TestCaseEntity>

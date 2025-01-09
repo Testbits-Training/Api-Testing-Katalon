@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>sample test case request response channing using groovy</description>
+   <name>ReqRes-Channning-JSON-Groovy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aedb4d82-9415-4e0c-b705-4bf6004f8c00</testCaseGuid>
+</TestCaseEntity>

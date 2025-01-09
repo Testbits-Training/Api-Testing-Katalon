@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>sampel channing xml api response</description>
+   <name>ResquestResponse-Channing-XML</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d25e8007-fb61-4a1b-a860-9ea685b3bb5f</testCaseGuid>
+</TestCaseEntity>

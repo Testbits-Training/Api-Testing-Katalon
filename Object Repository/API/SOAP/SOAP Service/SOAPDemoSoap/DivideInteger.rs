@@ -8,7 +8,7 @@
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -30,7 +30,7 @@
       <webElementGuid>3833e1d5-a738-4c5d-9e05-181bd54da0fe</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.7.3</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <path></path>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
@@ -39,7 +39,7 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:DivideInteger>
-         &lt;tem:Arg1>10&lt;/tem:Arg1>
+         &lt;tem:Arg1>${num1}&lt;/tem:Arg1>
          &lt;tem:Arg2>10&lt;/tem:Arg2>
       &lt;/tem:DivideInteger>
    &lt;/soapenv:Body>
@@ -48,8 +48,15 @@
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>https://www.crcind.com:443/csp/samples/SOAP.Demo.cls</soapServiceEndpoint>
    <soapServiceFunction>DivideInteger</soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.FIRST_NUM</defaultValue>
+      <description></description>
+      <id>5414243b-7b4c-4542-a5cc-ce373070c502</id>
+      <masked>false</masked>
+      <name>num1</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -62,6 +69,8 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+println 'This is from result addinterger api :' +GlobalVariable.FIRST_NUM
+WS.verifyElementText(response, 'DivideIntegerResponse.DivideIntegerResult', '2')</verificationScript>
    <wsdlAddress>https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1</wsdlAddress>
 </WebServiceRequestEntity>
